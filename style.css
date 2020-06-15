@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swa");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  /*   border: solid 2px red; */
+}
+.fixed {
+  width: 125px;
+  height: 50px;
+  position: fixed;
+  right: 0px;
+  padding-left: 20px;
+  line-height: 50px;
+  transition: 0.5s;
+  font-family: "Lobster", cursive;
+  font-size: 22px;
+  z-index: 2;
+}
+.fixed.f1 {
+  background-color: #FF6666;
+  top: 50px;
+}
+.fixed.f2 {
+  background-color: #FF9900;
+  top: 150px;
+}
+.fixed.f3 {
+  background-color: #99CCFF;
+  top: 250px;
+}
+.fixed:hover {
+  box-shadow: 5px 5px 60px rgba(0, 0, 0, 0.4);
+  width: 150px;
+  height: 50px;
+}
+
+html,
+body {
+  background-color: #ffffcc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  font-family: 微軟正黑體;
+  font-weight: 700;
+}
+
+a {
+  color: initial;
+  text-decoration: initial;
+}
+.box {
+  width: 400px;
+  background-color: #fff;
+  box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.4);
+  transition: 0.5s;
+}
+.box:hover {
+  box-shadow: 5px 5px 60px rgba(0, 0, 0, 0.4);
+  transition: translate(-5px, -5px);
+}
+.box:hover .top {
+  height: 250px;
+}
+
+.top {
+  background-image: url(https://raw.githubusercontent.com/LLiiM/midterm/master/%E6%94%9D%E5%BD%B1%E7%B5%84%E5%90%8C%E5%AD%B8%E7%9A%84%E8%A8%98%E9%8C%84_200128_0006.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 330px;
+  position: relative;
+  transition: 0.5s;
+}
+.top .tag {
+  width: 25px;
+  height: 50px;
+  background-color: #ffffcc;
+  float: right;
+  margin-right: 30px;
+}
+.top .name {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  padding: 5px 15px;
+  letter-spacing: 2px;
+  color: white;
+  font-size: 30px;
+  font-weight: 300;
+  background: linear-gradient(transparent 0%, black 100%);
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+.top .name .smallText {
+  font-size: 16px;
+}
+.halfcirbuttom {
+  width: 50px;
+  height: 25px;
+  border-radius: 0 0 50% 50% / 0 0 100% 100%;
+  background-color: #99cc99;
+  position: absolute;
+  right: 20px;
+  bottom: -20px;
+}
+.bottom {
+  padding: 10px 20px 20px 20px;
+}
+.bottom li {
+  padding: 5px 0px;
+}
+.bottom h3 {
+  display: inline-block;
+}
+.bottom ul {
+  list-style: none;
+  padding-left: 0;
+}
+.buttons {
+  margin-top: 20px;
+}
+.buttons .btn {
+  display: inline-block;
+  padding: 10px 25px;
+  letter-spacing: 2px;
+  border-radius: 5px;
+}
+.btnWebsite {
+  background-color: #ffcc99;
+  color: white;
+  transition: 0.5s;
+}
+.btnWebsite:hover {
+  background-color: #ff9966;
+}
+.btnNews {
+  border: solid 1px black;
+  float: right;
+}
+.btnNews:hover {
+  background-color: #eee;
+}
